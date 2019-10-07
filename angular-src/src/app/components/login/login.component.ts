@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FlashMessagesService } from 'angular2-flash-messages';
 import { AuthService } from './../../services/auth.service';
 
 @Component({
@@ -10,7 +9,7 @@ import { AuthService } from './../../services/auth.service';
 export class LoginComponent implements OnInit {
   username:String;
   password:String;
-  constructor(private flashmessage: FlashMessagesService,
+  constructor(
     private authService: AuthService) {
 
      }
