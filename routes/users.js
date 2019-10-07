@@ -32,43 +32,46 @@ router.post('/authenticate', (req,res)=>{
     const password = req.body.password;
 
     //return res.json({success: false, msg: req.body});
+    user.findById('5d9b16670f221e0017593e05', (err, res)=>{
+        return res.json({success: err, msg: res});
+    });
 
-    user.getUserByUsername(username, (err, userObj)=>{
+    // user.getUserByUsername(username, (err, userObj)=>{
 
-        if(err) {
+    //     if(err) {
          
-            return res.json({success: false, msg: err});
-            throw err;
+    //         return res.json({success: false, msg: err});
+    //         throw err;
 
-        }
-        if(!user){
-            return res.json({success: false, msg: 'User not found'});
-        }
+    //     }
+    //     if(!user){
+    //         return res.json({success: false, msg: 'User not found'});
+    //     }
 
-        console.log(userObj);
-        user.comparePassword(password, userObj.password, (err, isMatch)=>{
-            if(err) throw err;
-            if(isMatch){
+    //     console.log(userObj);
+    //     user.comparePassword(password, userObj.password, (err, isMatch)=>{
+    //         if(err) throw err;
+    //         if(isMatch){
                 
-                var token = jwt.sign({ id: user._id }, config.secret, {
-                    expiresIn: 86400 // expires in 24 hours
-                  });
+    //             var token = jwt.sign({ id: user._id }, config.secret, {
+    //                 expiresIn: 86400 // expires in 24 hours
+    //               });
 
-                res.json({
-                    success: true,
-                    token: token,
-                    user: {
-                        id: userObj._id,
-                        name: userObj.name,
-                        username: userObj.username,
-                        email: userObj.email
-                    }
-                })
-            }else{
-                return res.json({success: false, msg: 'Wrong password'});
-            }
-        });
-    })
+    //             res.json({
+    //                 success: true,
+    //                 token: token,
+    //                 user: {
+    //                     id: userObj._id,
+    //                     name: userObj.name,
+    //                     username: userObj.username,
+    //                     email: userObj.email
+    //                 }
+    //             })
+    //         }else{
+    //             return res.json({success: false, msg: 'Wrong password'});
+    //         }
+    //     });
+    // })
 });
 
 //Profile
