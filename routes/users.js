@@ -31,10 +31,16 @@ router.post('/authenticate', (req,res)=>{
     const username = req.body.username;
     const password = req.body.password;
 
-    return res.json({success: false, msg: req.body});
+    //return res.json({success: false, msg: req.body});
 
     user.getUserByUsername(username, (err, userObj)=>{
-        if(err) throw err;
+
+        if(err) {
+         
+            return res.json({success: false, msg: err});
+            throw err;
+
+        }
         if(!user){
             return res.json({success: false, msg: 'User not found'});
         }
