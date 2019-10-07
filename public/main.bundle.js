@@ -5,8 +5,8 @@ webpackJsonp([1,4],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(313);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(699);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(694);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -45,7 +45,7 @@ var AuthService = (function () {
             .map(function (res) { return res.json(); });
     };
     AuthService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === 'function' && _a) || Object])
     ], AuthService);
     return AuthService;
@@ -55,7 +55,7 @@ var AuthService = (function () {
 
 /***/ }),
 
-/***/ 337:
+/***/ 336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85,7 +85,7 @@ var ValidateService = (function () {
         return re.test(String(email).toLowerCase());
     };
     ValidateService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
         __metadata('design:paramtypes', [])
     ], ValidateService);
     return ValidateService;
@@ -94,7 +94,7 @@ var ValidateService = (function () {
 
 /***/ }),
 
-/***/ 396:
+/***/ 395:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -103,33 +103,33 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 396;
+webpackEmptyContext.id = 395;
 
 
 /***/ }),
 
-/***/ 397:
+/***/ 396:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(484);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(483);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(522);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(521);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(514);
 
 
 
 
 if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].production) {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=C:/Users/Stephen-Comp/projects/meanauthapp/angular-src/src/main.js.map
 
 /***/ }),
 
-/***/ 514:
+/***/ 513:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -151,10 +151,10 @@ var AppComponent = (function () {
     AppComponent.prototype.ngOnInit = function () {
     };
     AppComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(689),
-            styles: [__webpack_require__(682)]
+            template: __webpack_require__(684),
+            styles: [__webpack_require__(677)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -164,23 +164,23 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 515:
+/***/ 514:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(475);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(313);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(514);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__ = __webpack_require__(519);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_dashboard_dashboard_component__ = __webpack_require__(516);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_home_home_component__ = __webpack_require__(517);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_login_login_component__ = __webpack_require__(518);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_register_register_component__ = __webpack_require__(521);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__ = __webpack_require__(520);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_validate_service__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(474);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__ = __webpack_require__(518);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_dashboard_dashboard_component__ = __webpack_require__(515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_home_home_component__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_login_login_component__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_register_register_component__ = __webpack_require__(520);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__ = __webpack_require__(519);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_validate_service__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_auth_service__ = __webpack_require__(219);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -217,7 +217,7 @@ var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__["a" /* NavbarComponent */],
@@ -244,7 +244,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 516:
+/***/ 515:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -266,10 +266,10 @@ var DashboardComponent = (function () {
     DashboardComponent.prototype.ngOnInit = function () {
     };
     DashboardComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'app-dashboard',
-            template: __webpack_require__(690),
-            styles: [__webpack_require__(683)]
+            template: __webpack_require__(685),
+            styles: [__webpack_require__(678)]
         }), 
         __metadata('design:paramtypes', [])
     ], DashboardComponent);
@@ -279,7 +279,7 @@ var DashboardComponent = (function () {
 
 /***/ }),
 
-/***/ 517:
+/***/ 516:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -301,10 +301,10 @@ var HomeComponent = (function () {
     HomeComponent.prototype.ngOnInit = function () {
     };
     HomeComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'app-home',
-            template: __webpack_require__(691),
-            styles: [__webpack_require__(684)]
+            template: __webpack_require__(686),
+            styles: [__webpack_require__(679)]
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);
@@ -314,14 +314,12 @@ var HomeComponent = (function () {
 
 /***/ }),
 
-/***/ 518:
+/***/ 517:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular2_flash_messages__ = __webpack_require__(525);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__(219);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -334,10 +332,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
 var LoginComponent = (function () {
-    function LoginComponent(flashmessage, authService) {
-        this.flashmessage = flashmessage;
+    function LoginComponent(authService) {
         this.authService = authService;
     }
     LoginComponent.prototype.ngOnInit = function () {
@@ -355,21 +351,21 @@ var LoginComponent = (function () {
         });
     };
     LoginComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'app-login',
-            template: __webpack_require__(692),
-            styles: [__webpack_require__(685)]
+            template: __webpack_require__(687),
+            styles: [__webpack_require__(680)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */]) === 'function' && _b) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object])
     ], LoginComponent);
     return LoginComponent;
-    var _a, _b;
+    var _a;
 }());
 //# sourceMappingURL=C:/Users/Stephen-Comp/projects/meanauthapp/angular-src/src/login.component.js.map
 
 /***/ }),
 
-/***/ 519:
+/***/ 518:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -391,10 +387,10 @@ var NavbarComponent = (function () {
     NavbarComponent.prototype.ngOnInit = function () {
     };
     NavbarComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'app-navbar',
-            template: __webpack_require__(693),
-            styles: [__webpack_require__(686)]
+            template: __webpack_require__(688),
+            styles: [__webpack_require__(681)]
         }), 
         __metadata('design:paramtypes', [])
     ], NavbarComponent);
@@ -404,7 +400,7 @@ var NavbarComponent = (function () {
 
 /***/ }),
 
-/***/ 520:
+/***/ 519:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -426,10 +422,10 @@ var ProfileComponent = (function () {
     ProfileComponent.prototype.ngOnInit = function () {
     };
     ProfileComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
             selector: 'app-profile',
-            template: __webpack_require__(694),
-            styles: [__webpack_require__(687)]
+            template: __webpack_require__(689),
+            styles: [__webpack_require__(682)]
         }), 
         __metadata('design:paramtypes', [])
     ], ProfileComponent);
@@ -439,13 +435,13 @@ var ProfileComponent = (function () {
 
 /***/ }),
 
-/***/ 521:
+/***/ 520:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_validate_service__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_validate_service__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_auth_service__ = __webpack_require__(219);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -500,10 +496,10 @@ var RegisterComponent = (function () {
         });
     };
     RegisterComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_6" /* Component */])({
             selector: 'app-register',
-            template: __webpack_require__(695),
-            styles: [__webpack_require__(688)]
+            template: __webpack_require__(690),
+            styles: [__webpack_require__(683)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_validate_service__["a" /* ValidateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_validate_service__["a" /* ValidateService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_auth_service__["a" /* AuthService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* Router */]) === 'function' && _c) || Object])
     ], RegisterComponent);
@@ -514,7 +510,7 @@ var RegisterComponent = (function () {
 
 /***/ }),
 
-/***/ 522:
+/***/ 521:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -527,6 +523,41 @@ var environment = {
     production: false
 };
 //# sourceMappingURL=C:/Users/Stephen-Comp/projects/meanauthapp/angular-src/src/environment.js.map
+
+/***/ }),
+
+/***/ 677:
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ 678:
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ 679:
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ 680:
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ 681:
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -547,94 +578,59 @@ module.exports = ""
 /***/ 684:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "<app-navbar></app-navbar>\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>\n\n"
 
 /***/ }),
 
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "<p>\n  dashboard works!\n</p>\n"
 
 /***/ }),
 
 /***/ 686:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "<div class=\"jumbotron text-center\">\n  <h1>MEAN Authentication App</h1>\n  <p class=\"lead\">Welcome</p>\n  <div>\n    <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\n    <a class=\"btn btn-default\" [routerLink]=\"['/login']\">Login</a>\n  </div>\n</div>"
 
 /***/ }),
 
 /***/ 687:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "<h2 class=\"page-header\">Log In</h2>\n<form (submit)=\"onLoginSubmit()\">\n  <div class=\"form-group\">\n    <label>Username</label>\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\" />\n  </div>\n      <div class=\"form-group\">\n          <label>Password</label>\n          <input type=\"text\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\" />\n        </div>\n        <input type=\"submit\" class=\"btn btn-primary\" value=\"Log In\" />\n</form>"
 
 /***/ }),
 
 /***/ 688:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "<div class=\"d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow\">\n    <h5 class=\"my-0 mr-md-auto font-weight-normal\">Zawaroski.au</h5>\n    <nav class=\"my-2 my-md-0 mr-md-3\">\n      <a class=\"p-2 text-dark\" [routerLink]=\"['/']\">Home</a>\n      <a class=\"p-2 text-dark\" [routerLink]=\"['/login']\">Login</a>\n      <a class=\"p-2 text-dark\" [routerLink]=\"['/register']\">Register</a>\n      <a class=\"p-2 text-dark\" [routerLink]=\"['/']\">Profile</a>\n    </nav>\n    <a class=\"btn btn-outline-primary\" href=\"#\">Sign up</a>\n  </div>\n\n"
 
 /***/ }),
 
 /***/ 689:
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n<div class=\"container\">\n  <flash-messages></flash-messages>\n  <router-outlet></router-outlet>\n</div>\n\n"
+module.exports = "<p>\n  profile works!\n</p>\n"
 
 /***/ }),
 
 /***/ 690:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  dashboard works!\n</p>\n"
-
-/***/ }),
-
-/***/ 691:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"jumbotron text-center\">\n  <h1>MEAN Authentication App</h1>\n  <p class=\"lead\">Welcome</p>\n  <div>\n    <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\n    <a class=\"btn btn-default\" [routerLink]=\"['/login']\">Login</a>\n  </div>\n</div>"
-
-/***/ }),
-
-/***/ 692:
-/***/ (function(module, exports) {
-
-module.exports = "<h2 class=\"page-header\">Log In</h2>\n<form (submit)=\"onLoginSubmit()\">\n  <div class=\"form-group\">\n    <label>Username</label>\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\" />\n  </div>\n      <div class=\"form-group\">\n          <label>Password</label>\n          <input type=\"text\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\" />\n        </div>\n        <input type=\"submit\" class=\"btn btn-primary\" value=\"Log In\" />\n</form>"
-
-/***/ }),
-
-/***/ 693:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow\">\n    <h5 class=\"my-0 mr-md-auto font-weight-normal\">Zawaroski.au</h5>\n    <nav class=\"my-2 my-md-0 mr-md-3\">\n      <a class=\"p-2 text-dark\" [routerLink]=\"['/']\">Home</a>\n      <a class=\"p-2 text-dark\" [routerLink]=\"['/login']\">Login</a>\n      <a class=\"p-2 text-dark\" [routerLink]=\"['/register']\">Register</a>\n      <a class=\"p-2 text-dark\" [routerLink]=\"['/']\">Profile</a>\n    </nav>\n    <a class=\"btn btn-outline-primary\" href=\"#\">Sign up</a>\n  </div>\n\n"
-
-/***/ }),
-
-/***/ 694:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  profile works!\n</p>\n"
-
-/***/ }),
-
-/***/ 695:
-/***/ (function(module, exports) {
-
 module.exports = "<h2 class=\"page-header\">Register</h2>\n<form (submit)=\"onRegisterSubmit()\">\n  <div class=\"form-group\">\n    <label>Name</label>\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"name\" name=\"name\" />\n  </div>\n  <div class=\"form-group\">\n      <label>Username</label>\n      <input type=\"text\" class=\"form-control\" [(ngModel)]=\"username\" name=\"username\" />\n    </div>\n    <div class=\"form-group\">\n        <label>Email</label>\n        <input type=\"text\" class=\"form-control\"  [(ngModel)]=\"email\" name=\"email\"/>\n      </div>\n      <div class=\"form-group\">\n          <label>Password</label>\n          <input type=\"text\" class=\"form-control\" [(ngModel)]=\"password\" name=\"password\" />\n        </div>\n        <input type=\"submit\" class=\"btn btn-primary\" value=\"Submit\" />\n</form>"
 
 /***/ }),
 
-/***/ 729:
+/***/ 724:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(397);
+module.exports = __webpack_require__(396);
 
 
 /***/ })
 
-},[729]);
+},[724]);
 //# sourceMappingURL=main.bundle.map
