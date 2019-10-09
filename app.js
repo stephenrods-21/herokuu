@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
-const cron = require('node-cron');
+//const cron = require('node-cron');
 const config = require('./config/database');
 
 mongoose.connect(config.database);
@@ -36,9 +36,9 @@ app.listen(port, () => {
  console.log("server started on port: "+port);
 
  // schedule tasks to be run on the server   
- cron.schedule("* * * * *", function() {
-    console.log("running a task every minute");
-  });
+//  cron.schedule("* * * * *", function() {
+//     console.log("running a task every minute");
+//   });
 });
 
 //App Routes
