@@ -1,3 +1,4 @@
+import { Config } from './../common/common';
 import { Injectable } from '@angular/core';
 import {Http, Headers} from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -12,23 +13,30 @@ export class AuthService {
   registerUser(user){
     let headers = new Headers();
     headers.append('Content-Type','application/json');
-    return this.http.post('users/register',user, {headers: headers})
+    return this.http.post(Config.apiBaseurl+'users/register',user, {headers: headers})
     .map(res=>res.json());
   }
 
   authenticateUser(user){
     let headers = new Headers();
     headers.append('Content-Type','application/json');
-    return this.http.post('users/authenticate',user, {headers: headers})
+    return this.http.post(Config.apiBaseurl+'users/authenticate',user, {headers: headers})
     .map(res=>res.json());
+  }
+
+  isAuthenticated(){
+   if(localStorage.getItem('token'))
+    return true;
+    else
+    return false;
   }
 
   me(){
     let headers = new Headers();
     headers.append('Content-Type','application/json');
-    headers.append('x-access-token','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NzAzOTU3OTUsImV4cCI6MTU3MDQ4MjE5NX0.5utZm7giIWwOZPtS3KSnvqxsjFS_5Xxdrf-v_dnmkY4');
+    headers.append('x-access-token',localStorage.getItem('token'));
   
-    return this.http.get('users/profile', {headers: headers})
+    return this.http.get(Config.apiBaseurl+'users/profile', {headers: headers})
     .map(res=>res.json());
   }
 
